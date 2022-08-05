@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Woo 3C Shop</title>
+
+  <!-- Owl Stylesheets -->
+  <!-- <link rel="stylesheet" href="css/docs.theme.min.css"> -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/884c415745.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style-mod.css">
+  <link rel="stylesheet" href="css/swiper.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+  <!-- javascript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+
+
+</head>
+
+<body>
+  <!-- Messenger 洽談外掛程式 Code -->
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v10.0'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <!-- Your 洽談外掛程式 code -->
+  <div class="fb-customerchat" attribution="page_inbox" page_id="101678745398906">
+  </div>
+  <!-- facebook start -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v10.0&appId=108665585847484&autoLogAppEvents=1"
+    nonce="wjK2PB5p">
+    </script>
+  <div>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          xfbml: true,
+          version: 'v10.0'
+        });
+      };
+
+      (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution="setup_tool" page_id="306243739789179">
+    </div>
+  </div>
+  <!-- facebook end -->
+
+  <!-- Login popup -->
+  <style>
+    /* Full-width input fields */
+    input[type=text],
+    input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: rgba(204, 204, 204, 0);
+      border: none;
+    }
+  </style>
+
+  <div id="id01" class="modal">
+    <div class="register-contain">
+      <form class="modal-content animate" action="/action_page.php" method="post">
+
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close"
+            title="Close Modal">&times;</span>
+        </div>
+
+        <div class="loginForm">
+          <h1>登入</h1>
+          <label for="uname"><b>Email</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+
+          <label for="psw"><b>密碼設定</b></label>
+          <input type="password" placeholder="輸入密碼" name="psw" required>
+          <label for="psw"><b>再次輸入</b></label>
+          <input type="password" placeholder="再次輸入密碼" name="psw" required>
+
+          <button class="loginSubmit btn-b" type="submit">登 入</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> 記住登入資料
+          </label>
+        </div>
+
+        <div class="loginForm" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">取
+            消</button>
+          <!-- <span class="psw">Forgot <a href="#">password?</a></span> -->
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+  <script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
+  <!-- header -->
+  <header>
+    <div class="container">
+      <input type="checkbox" name="" id="check">
+      <div class="logo-container">
+        <div class="nav-logo">
+          <a href="index.html"><img alt="logo" width="117.4" height="36" src="img/Woo3C.png" data-reactid="29"></a>
+        </div>
+      </div>
+      <div class="nav-btn">
+        <div class="nav-links">
+          <ul>
+            <li class="nav-link" style="--i: .6s">
+              <a href="#">
+                iPhone配件<i class="fas fa-caret-down"></i>
+              </a>
+              <div class="dropdown">
+                <ul>
+                  <li class="dropdown-link">
+                    <a href="product-list.html">手機保護殼</a>
+                  </li>
+                  <li class="dropdown-link">
+                    <a href="#">傳輸線</a>
+                  </li>
+                  <li class="dropdown-link">
+                    <a href="#">行動電源</a>
+                  </li>
+
+                  <li class="dropdown-link">
+                    <a href="#">螢幕保護貼</a>
+                  </li>
+                  <div class="arrow"></div>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-link" style="--i: .85s">
+              <a href="#">
+                Macbook周邊
+              </a>
+            </li>
+            <li class="nav-link" style="--i: 1.1s">
+              <a href="promo.html">優惠活動</a>
+            </li>
+            <li class="nav-link" style="--i: 1.35s">
+              <a href="shipping.html">購物說明</a>
+            </li>
+            <!-- <li class="nav-link" style="--i: 1.35s">
+              <a href="#">聯絡我們</a>
+            </li> -->
+          </ul>
+        </div>
+
+        <div class="log-sign" style="--i: 1.8s">
+          <ul>
+            <li><input class="search" type="search" placeholder="商品搜尋..."></li>
+            <li class="cart">
+              <a href="#">
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+            </li>
+          </ul>
+          <button class="login-btn-l" onclick="document.getElementById('id01').style.display='block'"
+            style="width:auto;">
+            <a href="#" class="btn transparent">登入</a>
+          </button>
+
+          <a href="signup.html" class="btn-b solid">註冊</a>
+        </div>
+      </div>
+
+      <div class="hamburger-menu-container">
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+          <a href="#" class="btn-b transparent">登入</a>
+        </button>
+        <div class="hamburger-menu">
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- <div class="banner">
+    <img src="img/promo-banner.jpg" alt="">
+  </div> -->
+
+  <!-- breadcrumb -->
+
+  <div class="container">
+    <div class="breadcrumb">
+      <ul>
+        <a href="index.html">首頁</a>
+        <i class="fas fa-angle-right"></i>
+        <a href="#">註冊帳號</a>
+      </ul>
+    </div>
+  </div>
+
+  <div class="register-contain">
+    <div class="register-row">
+      <form action="/action_page.php">
+        <div class="register-from">
+          <h1>註冊資料</h1>
+          <p>請填寫以下註冊資料</p>
+          <br>
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" id="email" required>
+          <hr>
+          <label for="psw"><b>密 碼</b></label>
+          <input type="password" placeholder="請輸入密碼" name="psw" id="psw" required>
+          <hr>
+          <label for="psw-repeat"><b>確認密碼</b></label>
+          <input type="password" placeholder=請再次輸入密碼 name="psw-repeat" id="psw-repeat" required>
+          <br>
+          <hr>
+          <div class="terms">
+            <input type="checkbox" name="" id="">
+            <label for="terms">By creating an account you agree to our <a href="#">Terms & Privacy</a>.</label>
+          </div>
+
+          <button type="submit" class="btn-b registerbtn">確 認</button>
+        </div>
+
+        <div class="to-signin">
+          <p>Already have an account?
+            <button class="blue3d" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+              Sign in</a>.
+            </button>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container footer-row">
+      <div class="col-12 col-md-6 col-lg-3 info-g">
+        <div class="info">
+          <div class="info-logo">
+            <img src="img/logo-w.svg" alt="">
+          </div>
+          <ul>
+            <li>Woo 3C Shop提供最優質的3C產品, <br>
+              給客戶最好的產品體驗</li>
+          </ul>
+          <div class="address">
+            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+            <span>
+              9F., No. 46, Fuxing Rd., Zhongli Dist.,<br>
+              Taoyuan City 320061, Taiwan (R.O.C.)
+            </span>
+          </div>
+          <div class="tel">
+            <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+            <span>
+              +886 - 903196184
+            </span>
+          </div>
+          <div class="email">
+            <i class="far fa-envelope" aria-hidden="true"></i>
+            <span>
+              woo3cshop@gmail.com
+            </span>
+          </div>
+          <div class="web">
+            <i class="fas fa-globe-asia" aria-hidden="true"></i>
+            <span>
+              woo3cshop.com
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-2 info-g">
+        <div class="info-sitmap">
+          <div class="info-sitmap-about">
+            <p class="p-title">關於我們</p>
+            <ul>
+              <li><a href="about_us.html">商店簡介</a> </li>
+              <li><a href="about_us.html">隱私權條款</a> </li>
+              <li><a href="contact.html">聯絡我們</a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-2 info-g">
+        <div class="info-sitmap">
+          <div class="info-sitmap-shipping">
+            <p class="p-title">購物說明</p>
+            <ul>
+              <li><a href="shipping.html">付費方式</a> </li>
+              <li><a href="shipping.html">運送方式</a> </li>
+              <li><a href="shipping.html">退換貨方式</a> </li>
+              <li><a href="shipping.html">常見問題</a> </li>
+              <li><a href="shipping.html">會員權益</a> </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 info-g">
+        <div class="info-sitmap">
+          <div class="info-sitmap-about">
+            <p class="p-title">FACEBOOK粉絲頁</p>
+            <div class="fb-page" data-href="https://www.facebook.com/Woo-3C-Shop-101678745398906" data-tabs="timeline"
+              data-width="220" data-height="190" data-small-header="true" data-adapt-container-width="true"
+              data-hide-cover="false" data-show-facepile="true">
+              <blockquote cite="https://www.facebook.com/Woo-3C-Shop-101678745398906" class="fb-xfbml-parse-ignore"><a
+                  href="https://www.facebook.com/Woo-3C-Shop-101678745398906">ZEN UIUX</a></blockquote>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-2 info-g">
+        <div class="info-sitmap">
+          <div class="info-sitmap-about">
+            <p class="p-title">LIND粉絲團</p>
+            <div class="line">
+              <img src="img/line-card.jpg" alt="">
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="container copyright">
+      <div class="text">
+        <p>Copyright 2021 WiEdu Co. ,Ltd.
+          All rights reserved</p>
+      </div>
+      <div class="ecpay">
+        <img src="img/ecpay_logo.png" alt="">
+      </div>
+
+    </div>
+
+
+
+
+  </footer>
+
+  <!-- banner -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+  <script>
+    var mySwiper = new Swiper('.swiper-container', {
+      // Optional parameters
+      direction: 'horizontal',
+      speed: 1000,
+      loop: true,
+      autoplay: {
+        delay: 5000,
+      },
+      effect: 'slide',
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    })
+  </script>
+
+  <script src="js/script.js"></script>
+
+  <script>
+    AOS.init({
+      easing: 'ease-in-out-sine'
+    });
+  </script>
+
+
+
+
+
+</body>
+
+</html>
